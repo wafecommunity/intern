@@ -1,0 +1,372 @@
+<!doctype html>
+<html>
+<title>Internship</title>
+<head>
+<style>
+.slidecontainer {
+  width: 100%;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+
+.dropbtn {
+  background-color: none;
+  color: black;
+  padding: 5px;
+  font-size: 16px;
+  border: black;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 6px 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+div.navbar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 15px;
+  font-size: 20px;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<style>
+body {
+  background-color: white;
+  font-family: cursive;
+}
+
+.glow {
+  font-size: 80px;
+  color: black;
+  text-align: center;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #F0FFFF, 0 0 40px #F0FFFF, 0 0 50px #F0FFFF, 0 0 60px #F0FFFF, 0 0 70px #F0FFFF;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #CCFFFF, 0 0 40px #CCFFFF, 0 0 50px #CCFFFF, 0 0 60px #CCFFFF, 0 0 70px #CCFFFF, 0 0 80px #CCFFFF;
+  }
+}
+</style>
+</head>
+<body>
+<p style="text-align:left;font-size:30px;"class="glow"> My DreamTern-----------------------------------------<a href="https://www.nitk.ac.in/"><img width="50" height="50" src="NITK_Emblem.png"></a>----------------------------------------<a style="text-decoration:none;color:black" href="#">Login/Register ?</a></p>
+<hr size="5" color="black"> 
+<div class="header">
+  <h1>Search for your dream Internship</h1>
+  
+</div>
+<div class="navbar" style="text-align:center;">
+  <a href="#">Special Offers</a>
+  <a href="#">Free Doubt calrifying sessions</a>
+  <a href="#">Fresher jobs</a>
+  <a href="E-Cell Project.html" class="right">Get back to home page</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h1>Filters</h1>
+    <h3>Category</h3>
+    <div style="align:center;" class="search_icon">
+    <input type="text" class="search_bar" placeholder="What are you looking for....">
+    <button class="go_button">Go</button>
+    </div>
+    <p>Search the category which you are interested at ?</p>
+    <h3>Location</h3>
+    <div style="align:center;" class="search_icon">
+    <input type="text" class="search_bar" placeholder="Which place are you comfortable with ?">
+    <button class="go_button">Go</button><br>
+    <div class="slidecontainer"><h3>Monthly Stipened Amount.</h3>
+    <input type="range" min="1500" max="30000" value="50" class="slider" id="myRange">
+    <p>Value: <span id="demo"></span></p>
+    <h3>Starting date</h3>
+    <div style="align:center;" class="search_icon">
+    <input type="text" class="search_bar" placeholder="What are you looking for....">
+    <button class="go_button">Go</button>
+    </div>
+    <h3>Ending date</h3>
+    <div style="align:center;" class="search_icon">
+    <input type="text" class="search_bar" placeholder="What are you looking for....">
+    <button class="go_button">Go</button>
+    </div><br>
+    <div class="dropdown">
+    <button class="dropbtn"><h3>Organisation type ☟</h3></button>
+    <div class="dropdown-content">
+    <h6><a href="#">All</a></h6>
+    <h6><a href="#">Private</a></h6>
+    <h6><a href="#">Government</a></h6>
+    <h6><a href="#">Non-Profit</a></h6>
+    <h6><a href="#">Consultant</a></h6>
+    <h6><a href="#">Business</a></h6>
+    </div>
+   </div>
+    
+  </div>
+
+    <script>
+    var slider = document.getElementById("myRange");
+    var output = document.getElementById("demo");
+    output.innerHTML = slider.value;
+    slider.oninput = function() {
+    output.innerHTML = this.value;
+}
+</script>
+  </div>
+    
+</div>
+  <div class="main">
+    <h2>1.Role available</h2>
+    <h5>Company offering</h5>
+    <h5 style="text-align:right"><a style="text-decoration:none;color:black" href="#">Company logo</a></h5>
+    <p>Working location &emsp;&emsp;&emsp; </p>
+    <p>Start Date &emsp;&emsp;&emsp; Duration &emsp;&emsp;&emsp; Stipend &emsp;&emsp;&emsp; Apply by &emsp;&emsp;&emsp; Organisation Type</p>
+    <br>
+    <hr>
+    <h2>2.Role available</h2>
+    <h5>Company offering</h5>
+    <h5 style="text-align:right"><a style="text-decoration:none;color:black" href="#">Company logo</a></h5>
+    <p>Working location &emsp;&emsp;&emsp; </p>
+    <p>Start Date &emsp;&emsp;&emsp; Duration &emsp;&emsp;&emsp; Stipend &emsp;&emsp;&emsp; Apply by &emsp;&emsp;&emsp; Organisation Type</p>
+    <br>
+    <hr>
+    <h2>3.Role available</h2>
+    <h5>Company offering</h5>
+    <h5 style="text-align:right"><a style="text-decoration:none;color:black" href="#">Company logo</a></h5>
+    <p>Working location &emsp;&emsp;&emsp; </p>
+    <p>Start Date &emsp;&emsp;&emsp; Duration &emsp;&emsp;&emsp; Stipend &emsp;&emsp;&emsp; Apply by &emsp;&emsp;&emsp; Organisation Type</p>
+    <br>
+    <hr>
+    <h2>4.Role available</h2>
+    <h5>Company offering</h5>
+    <h5 style="text-align:right"><a style="text-decoration:none;color:black" href="#">Company logo</a></h5>
+    <p>Working location &emsp;&emsp;&emsp; </p>
+    <p>Start Date &emsp;&emsp;&emsp; Duration &emsp;&emsp;&emsp; Stipend &emsp;&emsp;&emsp; Apply by &emsp;&emsp;&emsp; Organisation Type</p>
+    <br>
+    <hr>
+    <h2>5.Role available</h2>
+    <h5>Company offering</h5>
+    <h5 style="text-align:right"><a style="text-decoration:none;color:black" href="#">Company logo</a></h5>
+    <p>Working location &emsp;&emsp;&emsp; </p>
+    <p>Start Date &emsp;&emsp;&emsp; Duration &emsp;&emsp;&emsp; Stipend &emsp;&emsp;&emsp; Apply by &emsp;&emsp;&emsp; Organisation Type</p>
+    <br>
+    <hr>
+    <h2>6.Role available</h2>
+    <h5>Company offering</h5>
+    <h5 style="text-align:right"><a style="text-decoration:none;color:black" href="#">Company logo</a></h5>
+    <p>Working location &emsp;&emsp;&emsp; </p>
+    <p>Start Date &emsp;&emsp;&emsp; Duration &emsp;&emsp;&emsp; Stipend &emsp;&emsp;&emsp; Apply by &emsp;&emsp;&emsp; Organisation Type</p>
+    <br>
+    <hr>
+    <h2>7.Role available</h2>
+    <h5>Company offering</h5>
+    <h5 style="text-align:right"><a style="text-decoration:none;color:black" href="#">Company logo</a></h5>
+    <p>Working location &emsp;&emsp;&emsp; </p>
+    <p>Start Date &emsp;&emsp;&emsp; Duration &emsp;&emsp;&emsp; Stipend &emsp;&emsp;&emsp; Apply by &emsp;&emsp;&emsp; Organisation Type</p>
+    <br>
+    <hr>
+    <h2>8.Role available</h2>
+    <h5>Company offering</h5>
+    <h5 style="text-align:right"><a style="text-decoration:none;color:black" href="#">Company logo</a></h5>
+    <p>Working location &emsp;&emsp;&emsp; </p>
+    <p>Start Date &emsp;&emsp;&emsp; Duration &emsp;&emsp;&emsp; Stipend &emsp;&emsp;&emsp; Apply by &emsp;&emsp;&emsp; Organisation Type</p>
+    <br>
+    <hr>
+    <h2>9.Role available</h2>
+    <h5>Company offering</h5>
+    <h5 style="text-align:right"><a style="text-decoration:none;color:black" href="#">Company logo</a></h5>
+    <p>Working location &emsp;&emsp;&emsp; </p>
+    <p>Start Date &emsp;&emsp;&emsp; Duration &emsp;&emsp;&emsp; Stipend &emsp;&emsp;&emsp; Apply by &emsp;&emsp;&emsp; Organisation Type</p>
+    <br>
+    <hr>
+    <h2>10.Role available</h2>
+    <h5>Company offering</h5>
+    <h5 style="text-align:right"><a style="text-decoration:none;color:black" href="#">Company logo</a></h5>
+    <p>Working location &emsp;&emsp;&emsp; </p>
+    <p>Start Date &emsp;&emsp;&emsp; Duration &emsp;&emsp;&emsp; Stipend &emsp;&emsp;&emsp; Apply by &emsp;&emsp;&emsp; Organisation Type</p>
+    <br>
+    <hr>
+    </div>
+</div>
+<script>
+// When the user scrolls down 20px from the top of the document, slide down the navbar
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-50px";
+  }
+}
+</script>
+<div class="footer">
+  <h2>Thank you !!!!</h2>
+</div>
+</body>
+</html>
