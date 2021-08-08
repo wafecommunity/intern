@@ -32,6 +32,16 @@
   top:355px;
   background-color:#89ABE3FF;
 }
+.imagecenter{
+  position: absolute;
+  bottom: -670px;
+  right:5px;
+}
+#contact{
+  position: absolute;
+  bottom: -550px;
+}
+
 </style>
 </head>
 <body style="background-color: white;">	
@@ -82,11 +92,13 @@
 .button1 {background-color: #D55419;} 
 .button2 {background-color: #1A70BA;} 
 .image {
-  	position: absolute;
-  	top: 100%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
+  
 </style>
 <div class="mcenter">
 <p style="text-align:right">-an NITk initiative</p><p><button align="center" class="button button1">Login</button>
@@ -117,13 +129,30 @@ div.sticky {
 <br><br><br><br><br>
 <p style="font-size:20px;text-align:center">This website is created as an Initiative by students of NITK.<br> This website is very much useful for all the people who are aiming to get internship from very big companies.
 <br>i.e., We have special classes throught the year for various streams.<br> Also you can look into the companies who are looking for intern and apply for it through the website.</p>
+<hr size="20" color="black">
 
-<div class="imagecenter" style="align:center;margin-right:240px">
+<p id="citylocation" style="text-align:center;font-size:20px">Top Internship providing locations</p>
+<div class="Popular cities" >
+<img class="cities" src="work from home.jpg" width="150" height="100">
+<img class="cities" src="chennai.jpg" width="150" height="100">
+<img class="cities" src="delhi.jpg" width="10%" height="10%">
+<img class="cities" src="bangalore.jpg" width="10%" height="10%">
+<img class="cities" src="hyderabad.jpg" width="10%" height="10%">
+<img class="cities" src="kolkata.jpg" width="150" height="100">
+<img class="cities" src="mumabi.jpeg" width="10%" height="10%">
+<img class="cities" src="pondicherry1.jpg" width="150" height="100">
+<img class="cities" src="cbe.jpg" width="150" height="100">
+<img class="cities" src="international.png" width="100" height="100">
+</div>
+<p><pre>Work from home              Chennai                Delhi              Bangalore            Hyderabad              Kolkata               Mumbai             Pondicherry            Coimbatore       International</pre></p>
+ 
+<div class="imagecenter" style="align:center;margin-right:240px;">
   <img class="mySlides" src="Internship-Book.jpg" style="width:60%;">
   <img class="mySlides" src="intern1.jpeg" style="width:60%;">
-  <img class="mySlides" src="intern2.webp" style="width:60%;">
   <img class="mySlides" src="book.jpeg" style="width:60%;">
+
 </div>
+
 <script>
 var myIndex = 0;
 carousel();
@@ -140,6 +169,8 @@ function carousel() {
   setTimeout(carousel, 2000); // Change image every 2 seconds
 }
 </script>
+
+<p id="contact">Mail us:<a  style="text-decoration:none;text-align:bottom;" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox?compose=new">darshan.lena@gmail.com</a><br>Contact No: +91 7540058926</p>
 </body>
 </html>
 
