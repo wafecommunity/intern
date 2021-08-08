@@ -1,10 +1,43 @@
 <!doctype html>
 <html>
 <title>My DreamTern</title>
+<head>
+<style>
+.mySlides {display:none;}
+
+.imagecenter {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.search_icon {
+  display: block;
+  margin-left: auto;
+  margin-right: 560px;
+  width: 20%;
+}
+.search_bar {
+  position: absolute;
+  top: 355px;
+  left: 500px;
+  height: 50px;
+  width: 500px;
+}
+.go_button{
+  position: absolute;
+  height: 55px;
+  width: 50px;
+  right:460px;
+  top:355px;
+  background-color:#89ABE3FF;
+}
+</style>
+</head>
 <body style="background-color: white;">	
 <p style="font-face:Arial;font-size: 40px;text-align:center;font-color:solid black">My DreamTern</p>
-<div><p style="text-align:right;word-spacing:30px;font-size:20px"><a style="text-decoration:none;color:black" href="">About</a>  <a style="text-decoration:none;color:black" href="">Contact</a></p></div><br>
-<hr size="20" color="black">
+<div style="margin-right:200px;text-align:right;word-spacing:100px;font-size:20px;"><a style="text-decoration:none;color:black" href="">About</a>  <a style="text-decoration:none;color:black" href="">Contact</a></div><br>
+<br><hr size="20" color="black">
 <style>
 .nitk{
   transform: translateY(-110%);
@@ -72,14 +105,41 @@ div.sticky {
 </style>
 
 <div class="mright">
-<img style="height=100%;width:175%;opacity:0.2;align="center" src="internship image.png" alt="simple image on internship" >
+<img style="height=100%;width:175%;opacity:0.1;align="center" src="internship image.png" alt="simple image on internship" />
+</div>
+<div style="align:center;" class="search_icon">
+<input type="text" class="search_bar" placeholder="What are you looking for....">
+<button class="go_button">Go</button>
 </div>
 
-<div class="sticky"  style="margin-top: -100px;text-align:center;word-spacing:200px;border:5px solid black;padding:3px;font-size:20px;"><a style="text-decoration:none;color:#00203FFF" href="">Internships</a> . <a style="text-decoration:none;color:black" href="">Online-Classes</a> . <a style="text-decoration:none;color:black" href="">Fresher-Jobs</a></div>
+<div class="sticky"  style="margin-top: -100px;text-align:center;word-spacing:200px;border:5px solid black;padding:3px;font-size:20px;"><a style="text-decoration:none;color:#00203FFF" href="">Internships</a> |.| <a style="text-decoration:none;color:black" href="">Online-Classes</a> |.| <a style="text-decoration:none;color:black" href="">Fresher-Jobs</a></div>
 
-<br><br>
+<br><br><br><br><br>
 <p style="font-size:20px;text-align:center">This website is created as an Initiative by students of NITK.<br> This website is very much useful for all the people who are aiming to get internship from very big companies.
 <br>i.e., We have special classes throught the year for various streams.<br> Also you can look into the companies who are looking for intern and apply for it through the website.</p>
+
+<div class="imagecenter" style="align:center;margin-right:240px">
+  <img class="mySlides" src="Internship-Book.jpg" style="width:60%;">
+  <img class="mySlides" src="intern1.jpeg" style="width:60%;">
+  <img class="mySlides" src="intern2.webp" style="width:60%;">
+  <img class="mySlides" src="book.jpeg" style="width:60%;">
+</div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
 </body>
 </html>
 
